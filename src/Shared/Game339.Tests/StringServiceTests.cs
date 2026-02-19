@@ -38,7 +38,7 @@ public class StringServiceTests
     [TestCase("hello", "hello")] // single word
     [TestCase("Hello World", "World Hello")] // standard usecase
     [TestCase("The quick brown fox", "fox brown quick The")]
-    [TestCase(" hello world ", "world hello")] // trims spaces
+    [TestCase(" hello world ", "world hello")] // trims spaces 
     [TestCase("a b c", "c b a")] // multiple spaces
     public void ReverseWords_CommonCases(string input, string expected)
     {
