@@ -42,7 +42,7 @@ public class StringServiceTests
     [TestCase("a b c", "c b a")] // multiple spaces
     public void ReverseWords_CommonCases(string input, string expected)
     {
-        var actual = StringUtils.ReverseWords(input);
+        var actual = _vsc.ReverseWords(input);
         Assert.That(actual, Is.EqualTo(expected));
     }
 }
